@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+img.a {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+ 
+   border-radius: 50%;
+}
+p{
+text-align:center;
+font-smooth: auto;
+font-smooth: never;
+font-smooth: always;
+
+/* <length> value */
+font-smooth: 2em;
+
+}
+
+</style>
+</head>
+<body>
+
+
+{% for im in Image %}
+
+<img class ='a' src="{{ im.image.url }}" alt="img">
+<img src="{{ im.gif.url }}" alt="img">
+
+{% endfor %}
+{% for im_gif in happy %}
+
+
+
+{% endfor %}
+
+<p> Hello Friends I am Sai Chaitanya ,Welcome to my website.Read about my profession <a href ='http://localhost:8000/resume/'>here</a>. </p>
+</body>
+</html>
